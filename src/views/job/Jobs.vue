@@ -10,7 +10,7 @@
     </p>
     <ul class="jobs">
         <li v-for="job in jobs" :key="job.id">
-            {{job.position}}
+            <router-link :to="{name:'job_details',params : {id: job.position}}">{{job.position}}</router-link>
         </li>
     </ul>
   </div>
